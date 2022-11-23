@@ -74,5 +74,7 @@ int main(){
     std::cout<<mensag<<std::endl;
     std::cout<<"    "<<std::endl;
     atualiza();
+    limpatela();
+    std::cout<<"|||||||||||                 Finalizado !!!                          |||||||||||"<<std::endl;
     return 0;
 }
