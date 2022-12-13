@@ -15,18 +15,18 @@ void menu(){
     do{
         limpatela();
         opcao = 0;
-std::cout<<"               ©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©"<<std::endl;
-std::cout<<"               ©                                                ©"<<std::endl;
-std::cout<<"               ©             ATUALIZADOR  ARCH LINUX            ©"<<std::endl;
-std::cout<<"               ©                                                ©"<<std::endl;
-std::cout<<"               ©         1) Sistema e Flatpak                   ©"<<std::endl;
-std::cout<<"               ©         2) Sistema | flatpak | Reset           ©"<<std::endl;
-std::cout<<"               ©         3) Sistema | Flatpak | Desliga         ©"<<std::endl;
-std::cout<<"               ©         4) Saindo                              ©"<<std::endl;
-std::cout<<"               ©                                                ©"<<std::endl;
-std::cout<<"               ©               Faça sua escolha !!!             ©"<<std::endl;
-std::cout<<"               ©                                                ©"<<std::endl;
-std::cout<<"               ©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©©"<<std::endl;
+std::cout<<"               ╭─━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━─╮          "<<std::endl;
+std::cout<<"               ┋                                                     ┋          "<<std::endl;
+std::cout<<"               ┋             ATUALIZADOR  ARCH LINUX                 ┋          "<<std::endl;
+std::cout<<"               ┋                                                     ┋          "<<std::endl;
+std::cout<<"               ┋         1) Sistema | Flatpak | Yay                  ┋          "<<std::endl;
+std::cout<<"               ┋         2) Sistema | flatpak | YAY | Reset          ┋          "<<std::endl;
+std::cout<<"               ┋         3) Sistema | Flatpak | YAY |Desliga         ┋          "<<std::endl;
+std::cout<<"               ┋         4) Saindo                                   ┋          "<<std::endl;
+std::cout<<"               ┋                                                     ┋          "<<std::endl;
+std::cout<<"               ┋               Faça sua escolha !!!                  ┋          "<<std::endl;
+std::cout<<"               ┋                                                     ┋          "<<std::endl;
+std::cout<<"               ╰─━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━─╯          "<<std::endl;
 std::cin>> opcao;
 //verifica se foi digitado uma letra ou um numero de 1-3.. senão loop
     if (!opcao){
@@ -66,6 +66,12 @@ std::cin>> opcao;
 void atualiza(){
      system(comand.c_str());
 }
+
+void fim(){
+    std::cout<<"               ╭─━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━─╮          "<<std::endl;
+    std::cout<<"                                    Finalizado !!!                              "<<std::endl;
+    std::cout<<"               ╰─━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━─╯          "<<std::endl;
+}
 //inicio programa
 int main(){
     limpatela();
@@ -75,6 +81,7 @@ int main(){
     std::cout<<"    "<<std::endl;
     atualiza();
     limpatela();
-    std::cout<<"|||||||||||                 Finalizado !!!                          |||||||||||"<<std::endl;
+    fim();
+
     return 0;
 }
