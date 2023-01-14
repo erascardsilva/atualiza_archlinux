@@ -36,17 +36,17 @@ std::cin>> opcao;
             }else{
     switch (opcao){
     case 1 :
-        comand = "sudo pacman -Syu && yay -Syu && flatpak update ";
+        comand = "sudo pacman -Syu --noconfirm && yay -Syu --noconfirm && flatpak update ";
         mensag = "Atualiza tudo !!";
         break;
 
     case 2 :
-        comand = "sudo pacman -Syu && yay -Syu && flatpak update && reboot";
+        comand = "sudo pacman -Syu --noconfirm && yay -Syu --noconfirm && flatpak update && reboot";
         mensag = "Atualiza tudo e reset sistema";
         break;
 
     case 3 :
-        comand = "sudo pacman -Syu && yay -Syu && flatpak update && shutdown now";
+        comand = "sudo pacman -Syu --noconfirm && yay -Syu --noconfirm && flatpak update && shutdown now";
         mensag = "Atualia tudo e desliga sistema";
         break;
 
